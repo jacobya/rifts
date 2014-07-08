@@ -1,5 +1,5 @@
 
-class NotEnoughPpeException(Exception):
+class NotEnoughMutablesException(Exception):
     pass
 
 
@@ -7,5 +7,5 @@ class CharacterNotPowerfulEnough(Exception):
     pass
 
 
-class PpeOverload(Exception):
+class MutableOverload(Exception):
     pass

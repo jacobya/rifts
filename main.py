@@ -19,9 +19,9 @@ if __name__ == "__main__":
     x = Character(**stats)
     print x
     try:
-        x.potential_psychic_energy.use_ppe(1000)
+        x.potential_psychic_energy.use(1000)
         print "\n\n\n\nCurrent PPE: {}".format(x.potential_psychic_energy)
-        x.potential_psychic_energy.reclaim_ppe(5)
+        x.potential_psychic_energy.reclaim(5)
         print "\n\n\n\nCurrent PPE: {}".format(x.potential_psychic_energy)
     except errors.CharacterNotPowerfulEnough:
         print (
