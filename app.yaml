@@ -1,0 +1,23 @@
+application: rifts
+version: alpha
+runtime: python27
+api_version: 1
+threadsafe: True
+
+
+handlers:
+
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*)
+
+- url: /.*
+  script: routes.root
+
+builtins:
+- remote_api: on
+- deferred: on
+
+libraries:
+- name: jinja2
+  version: latest
